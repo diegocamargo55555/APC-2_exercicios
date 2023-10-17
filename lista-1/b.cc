@@ -3,27 +3,27 @@
 #include <cmath>
 using namespace std;
 
-int multiplo4(int n1)
+bool multiplo4(int n1)
 {
     if (n1 % 4 == 0)
     {
-        return 1;
+        return true;
     }
     else
     {
-        return 0;
+        return false;
     }
 }
 
-int par_impar(int n1)
+bool par_impar(int n1)
 {
     if (n1 % 2 == 0)
     {
-        return 1;
+        return true;
     }
     else
     {
-        return 0;
+        return false;
     }
 }
 
