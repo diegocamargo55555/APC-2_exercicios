@@ -2,6 +2,20 @@
 #include <string>
 using namespace std;
 
+int potencia(float base, int expoente)
+{
+    float resultado, expoente_mostrar;
+    resultado = 1;
+    expoente_mostrar = expoente; 
+
+    while (expoente--)
+    {
+        resultado = resultado * base;
+    }
+    return resultado;
+    
+}
+
 int soma_n_numeros(int n1)
 {
     for (int i = 0; i < 5; i++)
@@ -13,21 +27,32 @@ int soma_n_numeros(int n1)
 
 bool ano_bissexto(int ano)
 {
-    if (ano % 4 == 0)
+    if (ano % 100 == 0)
     {
-        return true;
+        if (ano % 400 == 0)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+        
     }
-    else
-    {
-        return false;
+    else{
+        if (ano % 4 == 0)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
-    
 }
 
 // int dec_to_binario(int n)
 
-
 void test_senha(string senha)
+
 {
     bool maiusculo = 0, minusculo = 0, numero = 0;
     int size_senha = 0;
@@ -54,4 +79,14 @@ void test_senha(string senha)
     else{
         cout << "senha invalida" << endl;
     }
+}
+
+float juros_compostos(float taxa, int tempo)
+{
+    double valor_final, valor_inicial = 100, taxa1;
+    taxa1 = 1 + (taxa/100);
+    cout << potencia(taxa1, tempo) << endl;
+
+    valor_final = valor_inicial * potencia(taxa1, tempo);
+    return valor_final;
 }
