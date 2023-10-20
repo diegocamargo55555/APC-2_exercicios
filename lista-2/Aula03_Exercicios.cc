@@ -3,10 +3,6 @@
 #include "funcoes.h"
 using namespace std;
 
-int soma_n_numeros(int n1);
-bool ano_bissexto(int ano);
-void test_senha(string senha);
-
 int main()
 {   
 /* ex 1
@@ -24,9 +20,11 @@ int main()
     cin >> senha;
     test_senha(senha);
 */
-
+/* ex 5
     double tempo;
     double taxa;
     cin >> taxa >> tempo;
     cout << juros_compostos(taxa, tempo) << endl;
+*/
+
 }

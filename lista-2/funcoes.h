@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-int potencia(float base, int expoente)
+float potencia(float base, int expoente)
 {
     float resultado, expoente_mostrar;
     resultado = 1;
@@ -83,10 +83,10 @@ void test_senha(string senha)
 
 float juros_compostos(float taxa, int tempo)
 {
-    double valor_final, valor_inicial = 100, taxa1;
+    double valor_final, valor_inicial = 100, taxa1, taxa_tempo;
     taxa1 = 1 + (taxa/100);
-    cout << potencia(taxa1, tempo) << endl;
+    taxa_tempo = potencia(taxa1, tempo);
 
-    valor_final = valor_inicial * potencia(taxa1, tempo);
+    valor_final = valor_inicial * taxa_tempo;
     return valor_final;
 }

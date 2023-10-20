@@ -3,37 +3,29 @@ using namespace std;
 
 int main()
 {
-    bool maiusculo = 0, minusculo = 0, numero = 0;
-    string senha;
-    cin >> senha;
-    int size_senha = 0;
-    while (senha[size_senha] != '\0')
+    int n, menor = INT16_MAX;
+    cin >> n;
+    int array[n];
+    
+    for (int i = 0; i < n; i++)
     {
-        if (senha[size_senha] > 64 && senha[size_senha] < 91)
-        {
-            maiusculo = 1;
-        }
-        if (senha[size_senha] > 96 && senha[size_senha] < 123)
-        {
-            minusculo = 1;
-        }
-        if (senha[size_senha] >=0 && senha[size_senha <10])
-        {
-            numero = 1;
-        }
-        size_senha++;
+        cin >> array[i];
     }
-    if (size_senha >= 8 && maiusculo == 1 && minusculo == 1 && numero == 1)
+
+    for (int i = 0; i < n; i++)
     {
-        cout << "senha valida" << endl ;
-    }
-    else{
-        cout << "senha invalida" << endl;
+        if (menor > array[i])
+        {
+            
+        }
+        
     }
     
 
-
-    
-
+    for (int i = 0; i < n; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << endl << menor;
     
 }
