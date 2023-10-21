@@ -26,5 +26,20 @@ int main()
     cin >> taxa >> tempo;
     cout << juros_compostos(taxa, tempo) << endl;
 */
+    int n_inputs;
+    cin >> n_inputs;
+    int array[n_inputs];
+    
+    for (int i = 0; i < n_inputs; i++)
+    {
+        cin >> array[i];
+    }
 
+    ordenar_array(array, n_inputs);
+    
+    for (int i = 0; i < n_inputs; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << endl;
 }
