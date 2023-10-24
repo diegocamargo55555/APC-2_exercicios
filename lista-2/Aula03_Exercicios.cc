@@ -10,22 +10,28 @@ int main()
     cin >> n1;
     cout << soma_n_numeros(n1) << endl;
 */
+
 /* ex 2
     int ano;
     cin >> ano;
     cout << ano_bissexto(ano) << endl;
 */
+
 /* ex 4
     string senha;
     cin >> senha;
     test_senha(senha);
 */
+
 /* ex 5
+
     double tempo;
     double taxa;
     cin >> taxa >> tempo;
     cout << juros_compostos(taxa, tempo) << endl;
 */
+
+/* ex 6
     int n_inputs;
     cin >> n_inputs;
     int array[n_inputs];
@@ -42,4 +48,7 @@ int main()
         cout << array[i] << " ";
     }
     cout << endl;
+*/
+
+
 }

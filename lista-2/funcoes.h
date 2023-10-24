@@ -91,8 +91,6 @@ float juros_compostos(float taxa, int tempo)
     return valor_final;
 }
 
-
-
 void ordenar_array(int matriz[], int tam){
     int temp;
 
