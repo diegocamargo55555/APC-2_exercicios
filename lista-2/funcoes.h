@@ -90,3 +90,17 @@ float juros_compostos(float taxa, int tempo)
     valor_final = valor_inicial * taxa_tempo;
     return valor_final;
 }
+
+void ordenar_array(int matriz[], int tam){
+    int temp;
+
+    for(int i = 0; i < tam; i++){
+        for(int j = 0; j < tam; j++){
+            if(matriz[i] < matriz[j]){
+                temp = matriz[i];
+                matriz[i] = matriz[j];
+                matriz[j] = temp;
+            }
+        }
+    }
+}

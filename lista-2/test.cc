@@ -1,31 +1,37 @@
 #include <iostream>
 using namespace std;
 
+void bubble_sort(int matriz[], int tam){
+    int temp;
+
+    for(int i = 0; i < tam; i++){
+        for(int j = 0; j < tam; j++){
+            if(matriz[i] < matriz[j]){
+                temp = matriz[i];
+                matriz[i] = matriz[j];
+                matriz[j] = temp;
+            }
+        }
+    }
+}
+
 int main()
 {
-    int n, menor = INT16_MAX;
-    cin >> n;
-    int array[n];
-    
-    for (int i = 0; i < n; i++)
-    {
-        cin >> array[i];
+    int valores[] = {4, 6, 2, 8, 1, 9, 3, 0, 11};
+    int const quant_elem = 9;
+
+    // imprime a matriz sem a ordenação
+    for(int i = 0; i < quant_elem; i++){
+        cout << valores[i] << " ";
     }
 
-    for (int i = 0; i < n; i++)
-    {
-        if (menor > array[i])
-        {
-            
-        }
-        
-    }
-    
+    // vamos ordenar a matriz
+    bubble_sort(valores, quant_elem);
 
-    for (int i = 0; i < n; i++)
-    {
-        cout << array[i] << " ";
+    // imprime a matriz ordenada
+    cout << endl;
+    for(int i = 0; i < 9; i++){
+        cout << valores[i] << " ";
     }
-    cout << endl << menor;
-    
+    cout << endl;
 }
