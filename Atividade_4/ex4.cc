@@ -1,35 +1,26 @@
 #include <iostream>
 using namespace std;
 
-string count_vogais(string str)
+void count_vogais(string &str, int* vogais)
 {
-    int i = 0, vogais = 0;
-    // while (str[i] != '/0')
-    // {
-    //     i++;
-    //     if (str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E'|| str[i] == 'i' || str[i] == 'I'|| str[i] == 'o' || str[i] == 'O' || str[i] == 'u' || str[i] == 'U')
-    //     {
-    //         vogais++;
-    //     }      
-    // }
+    *vogais = 0;
     
-    for (char i :str)
+    for (char i : str)
     {
-        if (str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E'|| str[i] == 'i' || str[i] == 'I'|| str[i] == 'o' || str[i] == 'O' || str[i] == 'u' || str[i] == 'U')
+        if (i == 'a' || i == 'A' || i == 'e' || i == 'E'|| i == 'i' || i == 'I'|| i == 'o' || i == 'O' || i == 'u' || i == 'U')
         {
-            vogais++;
+            (*vogais)++;
         }
     }
-    cout << vogais << endl;
-    
 }
-
-
 
 int main()
 {
     string str = "luminous";
+    int vogais;
 
-    
+    count_vogais(str, &vogais);
+
+    cout << vogais << endl;
 
 }

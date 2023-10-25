@@ -7,8 +7,8 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        *l = lumi[i];
-        cout << *l << " "; 
+        l = &lumi[i];
+        cout << *l << " ";
     }
     cout << endl;
     
