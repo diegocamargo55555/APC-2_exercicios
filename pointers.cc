@@ -11,5 +11,8 @@ int main(){
     cout << "Endereco:" << setw(12) << &x << setw(15) << &p1 << setw(15) << &p2 << endl;
     cout << "Conteudo:" << setw(9) << x << setw(19) << p1 << setw(15) << p2 << endl;
     cout << "Valor:" << setw(12) << x << setw(16) << *p1 << setw(15) << *p2 << endl;
+
+
+    
 }
 
