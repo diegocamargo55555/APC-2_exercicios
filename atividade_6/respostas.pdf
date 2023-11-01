@@ -2,4 +2,6 @@ D. Analise os seguintes fragmentos de código
 
 6: se b for maior que c então retornara b, se não retornara 0
 
-7:
+7: será falso sempre
+
+8: mostrará o valor inserido em NUM e depois quantos numeros podem dividi-lo
