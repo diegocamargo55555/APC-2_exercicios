@@ -1,0 +1,7 @@
+p++; está somando 4 bytes no endereço de memoria do ponteiro
+
+(*p)++; está somando 1 ao valor guardado no endereço de memoria de p
+
+*(p++); está pegando o endereço de memoria seguinte de p;
+
+
