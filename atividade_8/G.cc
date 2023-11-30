@@ -18,7 +18,7 @@ int main()
     //sum_array(array1, array2);
 
     // G 3 
-    //int array1[10] = {5,8,13,3,4,6,5,2,11,4};
-    //array_par_impar(array1);
+    int array1[10] = {5,8,13,3,4,6,5,2,11,4};
+    array_par_impar(array1);
 
 }
