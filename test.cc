@@ -1,19 +1,29 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main(){
 
-    float *pa, *pb;
+    int *n;
 
-    float vet[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    if (!(n = new(nothrow) int)){
 
-    pa = &vet[0];
+    cout << "Falha de alocacao de memoria" << endl;
 
-    pb = &vet[9];
+    return -1;
 
-    printf("pa = %d pb = %d", pa, pb);
+    }
 
-    printf("\npb - pa = %d", pb - pa);
-    cout << endl;
+    *n = 58134;
+
+    cout << endl << *n;
+
+    delete n;
+    
+    cout << endl << *n;
+    
+    n = NULL;
+    
+    cout << endl << *n;
+    
     return 0;
 }
