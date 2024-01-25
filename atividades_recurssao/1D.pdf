@@ -1,0 +1,3 @@
+A função soma o resto de n até que ele não tenha mais um reesto inteiro.
+o retorno pare teste2(4532) será 532 + 32 + 2 + 2  = 568
+

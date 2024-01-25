@@ -1,0 +1,2 @@
+o codigo soma todas as n posições de um array que seja maior que 10.
+trata se de uma função recursiva em árvore, pois dentro dela mesma que vai chamar ela mesmo de novo.
