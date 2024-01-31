@@ -1,18 +1,28 @@
 #include<iostream>
 using namespace std;
 
-int somatoria(int n)
-{
-    int soma = 0;
-    n += 1;
-    while (n--)
-    {
-        soma += n ;
-    }
-    return soma;
+void bubble (int *v, int n){
+    int i, j;
+    for (i = n-1; i > 0; i--)
+        for (j = 0; j < i; j++)
+            if (v[j] > v[j+1])
+                troca (&v[j], &v[j+1]);
 }
 
-int main()
-{
-    cout << somatoria(5) << endl ;
+void troca (int *n1, int *n2){
+    int temp;
+    temp = n1;
+    n1 = n2;
+    n2 = temp;
+}
+
+int rec(int *v, int n){
+    int j=0;
+    if (v[j] > v[j+1] && j < n)
+        troca (&v[j], &v[j+1]);
+        return rec(v, n-1);
+    else
+        return v[];
+        
+    j ++=1;
 }
