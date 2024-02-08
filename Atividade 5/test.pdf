@@ -1,0 +1,23 @@
+ID do caso de test              titulo                          objetivo                                PRÉ-CONDIÇÕES
+TC_mult                         Verificar a multiplicação    Verificar se a multiplicação            o usuario deve inserir 2 numero e o resultado esperado
+                                                                ocorre corretamente
+
+Etapas de Teste:
+    usuario inserir os numeros que deseja multiplicae e o resultado esperado
+    
+    
+Dados de Teste: 
+    numero1, numero2 e resultado_esperado
+    
+Resultados Esperados:
+    O sistema fazer a multiplicação e verificar se o resultado bate com o esperado.
+    enviar uma mensagem "resultado correto"
+    se nao uma mensagem "resultado inesperado"
+    
+Pós-condições:
+    não tem
+
+Confirmação:
+    enviar uma mensagem "resultado correto"
+    ou
+    enviar uma mensagem "resultado inesperado"

@@ -1,11 +1,12 @@
 #include <iostream>
+#include "test.h"
 using namespace std;
 
-void print(string &str){
-    str+=" and sisters.";
-}
-int main(){
-    string s ="hello brother";
-    print(s);
-    cout<<s<<endl;
+int main()
+{
+//    int a = 3, b = 2, result;
+//    result = mult_por_referencia(&a,&b);
+//    assert(result, 6);
+    test2(3,3,12);
+
 }

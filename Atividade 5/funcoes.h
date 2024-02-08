@@ -9,10 +9,10 @@ int mult(int a, int b)
     return a*b;
 }
 
-// ex 2
+// ex 2 multiplicação por referencia x * b
 int mult_por_referencia(int* a, int* b)
 {
-    return *a * *b;
+    return (*a) * (*b);
 }
 
 // ex3
