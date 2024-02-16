@@ -1,12 +1,14 @@
 #include <iostream>
-#include "test.h"
+#include "funcoes.h"
+#include <assert.h>
 using namespace std;
 
 int main()
 {
-//    int a = 3, b = 2, result;
-//    result = mult_por_referencia(&a,&b);
-//    assert(result, 6);
-    test2(3,3,12);
+    int a = 3, b = 2;
+    assert(mult_por_referencia(&a,&b) == 5); // se 
+    
+    cout << "executado com sucesso";
+    
 
 }
