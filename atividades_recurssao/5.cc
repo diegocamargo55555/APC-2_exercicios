@@ -24,6 +24,7 @@ int rec(int *v, int n){
         troca (&v[j], &v[j+1]);
         return rec(v, n-1);
     else
+    
         return v[];
         
     j +=1;
